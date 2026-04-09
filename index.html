@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ActiveGlasses project website">
+  <meta name="keywords" content="Active Vision, Robot Manipulation, Egocentric Demonstration, Imitation Learning, Point Cloud Policy">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ActiveGlasses</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+  <link rel="icon" href="./static/images/favicon.ico">
+
+  <script defer src="./static/js/site.js"></script>
+</head>
+<body>
+
+<section class="hero publication-header">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <p class="hero-kicker static-kicker">Project Website</p>
+          <h1 class="title is-1 publication-title">
+            ActiveGlasses: Learning Manipulation with Active Vision from Ego-centric Human Demonstration
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Yanwen Zou<sup>1,2*</sup>,</span>
+            <span class="author-block">Chenyang Shi<sup>1*</sup>,</span>
+            <span class="author-block">Wenye Yu<sup>1,2</sup>,</span>
+            <span class="author-block">Han Xue<sup>1,3</sup>,</span>
+            <span class="author-block">Jun Lv<sup>3</sup>,</span>
+            <span class="author-block">Ye Pan<sup>1</sup>,</span>
+            <span class="author-block">Chuan Wen<sup>1†</sup>,</span>
+            <span class="author-block">Cewu Lu<sup>1,2,3†</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University,</span>
+            <span class="author-block"><sup>2</sup>Shanghai Innovation Institute,</span>
+            <span class="author-block"><sup>3</sup>Noematrix Ltd.</span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contribution.</span>
+            <span class="author-block"><sup>†</sup>Corresponding authors.</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./static/docs/submit.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="button-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/>
+                      <path d="M14 2v5h5"/>
+                      <path d="M9 15h6"/>
+                      <path d="M9 11h2"/>
+                    </svg>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <span class="external-link button is-normal is-rounded is-dark is-disabled-link">
+                  <span class="button-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.31-5.47-1.35-5.47-5.97 0-1.32.47-2.39 1.24-3.24-.12-.31-.54-1.56.12-3.25 0 0 1.01-.33 3.3 1.24a11.36 11.36 0 0 1 6 0c2.29-1.57 3.3-1.24 3.3-1.24.66 1.69.24 2.94.12 3.25.77.85 1.24 1.92 1.24 3.24 0 4.64-2.81 5.65-5.49 5.95.43.38.82 1.11.82 2.25 0 1.63-.02 2.93-.02 3.33 0 .32.21.7.82.58A12 12 0 0 0 12 .5Z"/>
+                    </svg>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="paper-tag">Active Vision</span>
+            <span class="paper-tag">Robot Manipulation</span>
+            <span class="paper-tag">Imitation Learning</span>
+            <span class="paper-tag">Object-centric Policy</span>
+            <span class="paper-tag">Zero-shot Transfer</span>
+          </div>
+          <div class="hero-abstract-snippet">
+            A head-mounted stereo camera is used during both human demonstration and robot deployment, while an object-centric 3D policy jointly predicts manipulation and viewpoint motion.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="full_demo" controls playsinline height="100%" class="large-video">
+        <source src="./static/videos/video_w_sound_50mb.mp4" type="video/mp4">
+      </video>
+      <p class="caption-text has-text-centered">
+        Overview video of the full ActiveGlasses pipeline, from egocentric human demonstration to robot deployment.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large-scale real-world robot data collection is a prerequisite for bringing robots into everyday deployment. However, existing pipelines often rely on specialized handheld devices, which increase operator burden, limit scalability, and fail to capture the naturally coordinated perception-manipulation behavior of daily human interaction.
+          </p>
+          <p>
+            <strong class="highlight-name">ActiveGlasses</strong> introduces a head-mounted system for learning robot manipulation from ego-centric human demonstrations with active vision. A stereo camera mounted on smart glasses is used as the only perception device during both collection and inference: the human wears it during bare-hand demonstrations, and the same setup is mounted on a 6-DoF perception arm at deployment time.
+          </p>
+          <p>
+            To bridge the embodiment gap, the method extracts object trajectories and trains an <strong>object-centric point-cloud policy</strong> that jointly predicts manipulation and viewpoint motion. Across tasks involving occlusion and high precision interaction, the system outperforms strong baselines under the same hardware setup and transfers across two robot platforms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Motivation and Contributions</h2>
+        <p class="section-lead has-text-centered">
+          To truly capture human intelligence, the robot data collection process must inherently align with human nature across two fundamental dimensions: manipulation and perception. In ActiveGlasses, we propose:
+        </p>
+        <div class="columns is-multiline contribution-grid">
+          <div class="column is-one-third">
+            <div class="info-card">
+              <h3 class="title is-5">Bare-hand Collection</h3>
+              <p>
+                Existing systems often require teleoperation or handheld devices. ActiveGlasses instead keeps data collection close to natural human behavior.
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="info-card">
+              <h3 class="title is-5">Active Vision</h3>
+              <p>
+                Human head motion is treated as a useful perceptual signal rather than as nuisance noise, enabling viewpoint adjustment during deployment.
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="info-card">
+              <h3 class="title is-5">Cross-embodiment Policy</h3>
+              <p>
+                The policy predicts object trajectories in task space, which enables zero-shot deployment across different robot platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="publication-image">
+          <img src="./static/images/overview.png" alt="ActiveGlasses pipeline overview">
+        </div>
+        <div class="content has-text-justified method-text">
+          <p>
+            The system is organized as a complete perception-manipulation pipeline. During data collection, a human operator performs tasks with bare hands while wearing smart glasses equipped with stereo vision and 6-DoF head tracking.
+          </p>
+          <p>
+            During post-processing, the system estimates depth, reconstructs point clouds, segments hands and manipulated objects, and extracts object trajectories in a unified world frame. The learned 3D policy then predicts both manipulation actions and head movement so that the robot can reproduce active perception at test time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-vcentered method-panels">
+      <div class="column is-half method-panel-column">
+        <div class="method-panel">
+          <div class="publication-image">
+            <img src="./static/images/glass_hardware.png" alt="Hardware and interface design">
+          </div>
+        </div>
+        <h3 class="title is-4 has-text-centered top-gap">Hardware and Interface</h3>
+        <div class="content has-text-justified">
+          <p>
+            ActiveGlasses combines XREAL Air 2 Ultra for head tracking with a ZED Mini stereo camera for perception. A lightweight on-device interface supports episode control through gesture and audio feedback.
+          </p>
+          <p class="figure-note">
+            We use the XREAL device specifically for stable 6-DoF trajectory tracking, and use that head motion signal as supervision for active-viewpoint behavior.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-half method-panel-column">
+        <div class="method-panel">
+          <div class="publication-image">
+            <img src="./static/images/Policy.png" alt="Policy design and action representation">
+          </div>
+        </div>
+        <h3 class="title is-4 has-text-centered top-gap">Policy Design</h3>
+        <div class="content has-text-justified">
+          <p>
+            The policy uses point clouds in the world frame as input and predicts absolute object trajectories together with relative head motion. This representation stabilizes active-view observations and improves cross-embodiment transfer.
+          </p>
+          <p class="figure-note">
+            The dashed box and the abs/rel labels indicate the ablation space studied in the paper: we explicitly compare current-object-pose conditioning and absolute-versus-relative trajectory representations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Real-world Task Illustrations</h2>
+        <div class="publication-image">
+          <img src="./static/images/tasks.png" alt="Task setup for book placement, bread insertion, and occluded water pouring">
+        </div>
+        <div class="content has-text-justified method-text">
+          <p>
+            The evaluation focuses on three real-world tasks that require purposeful camera movement. In all cases, active viewpoint adjustment is necessary before the manipulation arm can reliably complete the task.
+          </p>
+        </div>
+
+        <div class="columns is-multiline task-grid-row">
+          <div class="column is-one-third">
+            <div class="task-card-panel">
+              <img src="./static/videos/book_eval.gif" alt="Animated result for the book placement task." class="medium-video task-video">
+              <h3 class="subtitle is-5 top-gap">Book Placement</h3>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="task-card-panel">
+              <img src="./static/videos/bread_eval.gif" alt="Animated result for the bread insertion task." class="medium-video task-video">
+              <h3 class="subtitle is-5 top-gap">Bread Insertion</h3>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="task-card-panel">
+              <img src="./static/videos/teapot_eval.gif" alt="Animated result for the occluded distant water pouring task." class="medium-video task-video">
+              <h3 class="subtitle is-5 top-gap">Occluded Distant Water Pouring</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Quantitative Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            The paper compares ActiveGlasses against a variant without active vision and a pi0.5 baseline. Under the same single active-camera setting, ActiveGlasses consistently achieves higher final-stage success rates on all three tasks.
+          </p>
+        </div>
+        <div class="quant-stack">
+          <div class="table-card quant-table-card">
+            <div class="table-title">Final-stage Success Rates</div>
+            <p class="table-subtitle">
+              Comparison under the same single active-camera setup.
+            </p>
+            <div class="table-wrapper quant-table">
+              <table class="table is-fullwidth is-striped is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Method</th>
+                    <th>Book Placement</th>
+                    <th>Bread Insertion</th>
+                    <th>Occluded Pouring</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>ActiveGlasses</strong></td>
+                    <td>14/20</td>
+                    <td>11/20</td>
+                    <td>10/20</td>
+                  </tr>
+                  <tr>
+                    <td>w/o active vision</td>
+                    <td>7/20</td>
+                    <td>0/20</td>
+                    <td>4/20</td>
+                  </tr>
+                  <tr>
+                    <td>pi0.5 baseline</td>
+                    <td>7/20</td>
+                    <td>6/20</td>
+                    <td>4/20</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="table-card quant-table-card quant-side-card">
+            <div class="table-title">Representation Ablation</div>
+            <p class="ablation-intro">
+              On book placement, the paper reports that absolute object trajectory prediction without current-object-pose conditioning works best.
+            </p>
+            <div class="ablation-grid">
+              <div class="ablation-cell">
+                <div class="ablation-label">absolute, w/o current pose</div>
+                <div class="ablation-value"><strong>14/20</strong></div>
+              </div>
+              <div class="ablation-cell">
+                <div class="ablation-label">absolute, w current pose</div>
+                <div class="ablation-value">3/20</div>
+              </div>
+              <div class="ablation-cell">
+                <div class="ablation-label">relative, w current pose</div>
+                <div class="ablation-value">10/20</div>
+              </div>
+              <div class="ablation-cell">
+                <div class="ablation-label">relative, w/o current pose</div>
+                <div class="ablation-value">–</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Ablation and Cross-embodiment Takeaways</h2>
+        <p class="section-lead has-text-centered">
+          The paper studies both representation choices and deployment transfer, showing that the policy is not only effective but also portable across platforms.
+        </p>
+        <div class="columns is-multiline takeaway-grid">
+          <div class="column is-half">
+            <div class="info-card tall-card takeaway-card">
+              <h3 class="title is-5">Policy Ablation</h3>
+              <p>
+                The paper finds that predicting <strong>absolute object trajectories</strong> while avoiding additional conditioning on the current object pose works better than relative alternatives. This reduces overfitting to dominant motion patterns and encourages the model to rely on scene observation.
+              </p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="info-card tall-card takeaway-card">
+              <h3 class="title is-5">Cross-robot Transfer</h3>
+              <p>
+                Because the policy predicts object trajectories rather than robot-specific actions, it can realize zero-shot deployment on different robot platforms, including Flexiv Rizon 4 and UR5. On book placement, the first two stages remain fully successful on both platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zou2026activeglasses,
+  title={ActiveGlasses: Learning Manipulation with Active Vision from Ego-centric Human Demonstration},
+  author={Zou, Yanwen and Shi, Chenyang and Yu, Wenye and Xue, Han and Lv, Jun and Pan, Ye and Wen, Chuan and Lu, Cewu},
+  journal={Manuscript},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        ActiveGlasses project website rebuilt in the layout style of the local ARMADA reference site.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
